@@ -1,35 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Serene</title>
     <link rel="stylesheet" href="/estilo/estilo.css">
 </head>
+
 <body>
     <header>
-       <h1>Serene</h1>
+        <h1 class="fonte1">Serene</h1>
     </header>
     <nav>
-        <a href="#">Home</a>
-        <a href="#">Curiosades</a>
-        <a href="#">Plantas</a>
+        <a href="#">Você é forte</a>
+        <a href="#">Raizes forte</a>
     </nav>
     <main>
         <article>
-            <h1>Casa Bonita</h1>
-            <p>Refresque sua casa.</p>
+            <h1 class="fonte2">Como criar botões</h1>
+            <p>Muito facil!</p>
         </article>
-
     </main>
     <section>
-
+        <h1>A tag button</h1>
+        <p>O HTML Button pode ser definido pela tag de abertura button e a tag de fechamento /button. Dentro de um
+            elemento button, você pode colocar conteúdo, como texto ou imagens. Essa é a principal diferença entre esse
+            elemento e os botões criados com o elemento input.</p>
+        <p>Dessa forma, podemos utilizar a seguinte sintaxe:</p>
+        <p>button Click Aqui /button
+            Com isso, o resultado será conforme o exemplo abaixo:</p>
+        <button>Click Aqui</button>
     </section>
     <section>
+        <h1>Atributos do HTML Button</h1>
+        <p>O HTML Button é um elemento que permite o uso dos atributos globais e também atributos de eventos. Além
+            desses, temos também os seguintes atributos:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Atributo</th>
+                    <th>Valor</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>autofocus</td>
+                    <td>autofocus</td>
+                    <td>especifica que ao ler a página, esse botão recebe um auto foco.</td>
+                </tr>
+                <tr>
+                    <td>disabled</td>
+                    <td>disabled</td>
+                    <td>especifica que esse botão está desabilitado</td>
+                </tr>
+                <tr>
+                    <td>form</td>
+                    <td>form_id</td>
+                    <td>especifica um ou mais botões para formulários</td>
+                </tr>
+                <tr>
+                    <td>formaction</td>
+                    <td>URL</td>
+                    <td>especifica a URL a qual será enviado as informações do formulário</td>
+                </tr>
+                <tr>
+                    <td>formmethod</td>
+                    <td>get post</td>
+                    <td>especifica o método de envio do formulário.</td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>name</td>
+                    <td>especifica um nome ao botão</td>
+                </tr>
+                <tr>
+                    <td>type</td>
+                    <td>button reset submit</td>
+                    <td>especifica um tipo ao botão</td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>text</td>
+                    <td>especifica um valor inicial ao botão</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Desses atributos, o mais importante a ser declarado e no HTML Button ó type, que pode exercer diferentes características nos diversos navegadores.
 
+            Porém, é fácil perceber que, boa parte desses botões são utilizados hoje em dia como input, A vantagem de utilizar o HTML Button é a liberdade de estilização permitida através do CSS, além de poder incluir elementos como imagens.</p>
+            <h1>O atributo type</h1>
+            <p>O tipo de HTML Button. O possíveis valores são:</p>
+            <li><strong>submit:</strong> O botão envia os dados do formulário para o servidor. Esse é o padrão se o atributo não for especificado, ou se o atributo é dinamicamente mudado para um valor vazio, ou inválido.</li>
+            <li><strong>reset:</strong> O botão restaura todos os controles para seus valores iniciais.</li>
+            <li><strong>button:</strong> O botão não possui comportamento padrão. Ele pode ter scripts do lado do cliente associado com os eventos do elemento, no qual são acionados quando o evento ocorrer.</li>
+            <p>Vejamos, então o exemplo abaixo:</p>
+            <p>
+                form
+                    input type="text">
+                    button type="submit">Enviar button
+                /form
+            </p>
+            <p>
+                dessa forma, o resultado será como na imagem abaixo:
+            </p>
+            <form>
+                <input type="ola teste">
+                <button type="submit">Enviar</button>
+            </form>
+            <h1>Input do tipo Button</h1>
+            <p>Também é possível chamar um input do tipo botão, com o atributo type button.
+
+                input type="button" value="enviar">
+
+                Dessa forma temos o resultado como na imagem abaixo:</p>
+            <input type="button" value="enviar">
     </section>
     <footer>
-
+        <p>site feito por gustavsexoteste</p>
     </footer>
 </body>
 </html>
