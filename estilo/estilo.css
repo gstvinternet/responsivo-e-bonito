@@ -5,44 +5,80 @@
 @import url('https://fonts.googleapis.com/css2?family= Playfair +Display & display=swap');
 
 :root {
-    --fonte2:'Playfair Display', Geneva, Tahoma, Sans-serif;
-    --fonte1:'Borel', cursive;
+    --fonte2: 'Playfair Display', Geneva, Tahoma, Sans-serif;
+    --fonte1: 'Borel', cursive;
+    --cor1: #5a2300;
+    --cor2: #F15C00;
+    --cor3: #F18A00;
 }
 
 * {
     margin: 0px;
-    padding: 2px;
+    padding: 0px;
+}
+
+body {
+    background-color: var(--cor3);
+}
+
+a.externo::after {
+    content: '\00A0\1F517';
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2), var(--cor1));
+    min-height: 65px;
+    text-align: start;
+    padding-top: 35px;
 }
 
 header>h1 {
-    background-color: rgb(255, 255, 255);
-    text-shadow: 0px 0px 1px;
-    font-family: var(--fonte1);
+    color: white;
+    font-family: var(--fonte2);
+    font-weight: bolder;
+    margin-bottom: 0px;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.521);
 }
 
 nav {
+    background-color: var(--cor1);
     text-decoration: none;
     text-align: right;
+    padding: 5px;
 }
 
 nav>a {
-    color: black;
+    color: var(--cor2);
     text-decoration: none;
     font-weight: bold;
     font-family: var(--fonte1);
 }
 
-main>article>h1 {
-    text-align: center;
-    font-family: var(--fonte1);
+nav>a:hover {
+    background-color: var(--cor3);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.411);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+main>article>h1{
+    color: white;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.521);    
 }
 
 main>article>p {
-    text-align: center;
-    font-family: var(--fonte2);
+    color: white;
+    text-shadow: 1px 2px 3px rgba(0,0,0,0.521);
 }
-
-
-
-
- 
