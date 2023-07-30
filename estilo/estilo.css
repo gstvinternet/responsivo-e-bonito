@@ -56,6 +56,8 @@ nav>a {
 }
 
 nav>a:hover {
+    font-family: var (--fonte0);
+    color: var(--cor1);
     background-color: var(--cor3);
     padding: 10px;
     border-radius: 5px;
@@ -64,6 +66,7 @@ nav>a:hover {
 }
 
 main {
+    background-image: linear-gradient(to top, var(--cor3), var(--cor2), var(--cor1));
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
@@ -75,7 +78,8 @@ main {
 }
 
 main>article>h1{
-    color: white;
+    
+    color: rgb(255, 255, 255);
     text-shadow: 1px 2px 3px rgba(0,0,0,0.521);    
 }
 
@@ -84,7 +88,20 @@ main>article>p {
     text-shadow: 1px 2px 3px rgba(0,0,0,0.521);
 }
 
+footer {
+    font-family: var(--fonte1);
+    text-align: center;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin: auto;
+    margin-bottom: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 10pxrgba(0, 0, 0, 0.555);
+}
+
 section {
+    font-family: var(--fonte1);
     min-width: 300px;
     max-width: 1000px;
     background-color: white;
@@ -103,3 +120,25 @@ section h1 {
     font-size: 1.3em;
 }
 
+table {
+    border-collapse:collapse;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight:bolder;
+    padding: 20px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: white;
+}
+
+div#container {
+    overflow-x: auto;
+}
