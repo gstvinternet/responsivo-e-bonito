@@ -10,7 +10,10 @@
     --cor1: #5a2300;
     --cor2: #F15C00;
     --cor3: #F18A00;
+    --cor4: #fcaa12;
 }
+
+/**/
 
 * {
     margin: 0px;
@@ -27,9 +30,9 @@ a.externo::after {
 
 header {
     background-image: linear-gradient(to bottom, var(--cor3), var(--cor2), var(--cor1));
-    min-height: 65px;
-    text-align: start;
-    padding-top: 35px;
+    min-height: 150px;
+    text-align: center;
+    padding-top: 40px;
     font-family: var(--fonte2);
 }
 
@@ -37,7 +40,7 @@ header>h1 {
     color: white;
     font-family: var(--fonte2);
     font-weight: bolder;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.521);
 }
 
@@ -45,14 +48,15 @@ nav {
     background-color: var(--cor1);
     text-decoration: none;
     text-align: right;
-    padding: 5px;
+    padding: 10;
 }
 
 nav>a {
-    color: var(--cor2);
+    color: var(--cor4);
     text-decoration: none;
     font-weight: bold;
     font-family: var(--fonte1);
+    padding: 10;
 }
 
 nav>a:hover {
@@ -66,9 +70,9 @@ nav>a:hover {
 }
 
 main {
-    background-image: linear-gradient(to top, var(--cor3), var(--cor2), var(--cor1));
     min-width: 300px;
     max-width: 1000px;
+    background-image: linear-gradient(to top, var(--cor3), var(--cor2), var(--cor1));
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
@@ -78,14 +82,28 @@ main {
 }
 
 main>article>h1{
-    
+    margin: 0px;
+    font-family: var(--fonte1);
+    text-align: center;
     color: rgb(255, 255, 255);
     text-shadow: 1px 2px 3px rgba(0,0,0,0.521);    
 }
 
 main>article>p {
+    font-family: var(--fonte1);
+    text-align: center;
     color: white;
     text-shadow: 1px 2px 3px rgba(0,0,0,0.521);
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 350px;
+    display: block;
+    margin: auto;
 }
 
 footer {
